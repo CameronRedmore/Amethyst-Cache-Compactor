@@ -1,0 +1,30 @@
+#Amethyst Cache Compactor Main Config
+discs:
+    - basic:
+        recipe:
+            - "XYX"
+            - "ZYZ"
+            - "XYX"
+        items: 16
+        stacks: 8192
+        permission: "acc.basic"
+energy:
+    #Should networks consume power? (Requires SensibleToolbox to work)
+    consume: true
+    #How much energy should networks consume per disc when opened?
+    disc: 20
+    #How much energy should networks consume per cable when opened?
+    cable: 5
+database:
+    #Should the plugin connect to a MySQL database rather than an SQLite database?
+    mysql: false
+    #If the above is true, please ensure the following details are correct.
+    #The username of the user used to connect to your database.
+    name: MyDatabaseUserName
+    #The password of the above user.
+    password: MyDatabaseUserPassword
+    #The database to connect to on the MySQL server.
+    database: MyDatabaseName
+    #The url and port used to connect to the MySQL server.
+    url: localhost
+    port: 3306

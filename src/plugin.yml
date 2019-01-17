@@ -1,0 +1,23 @@
+name: AmethystCacheCompactor
+version: 1.1.8
+description: "Amethyst Development presents: Amethyst Cache Compactor (ACC for short)! ACC enables Applied Energistics type storage in Bukkit adding a variety of digital storage solutions to make storing items that little bit easier."
+author: "Amethyst Development"
+website: https://www.amethystdevelopment.co.uk/BukkitPlugins/ACC
+commands:
+    acc:
+        description: "View information about Amethyst Cache Compactor."
+        usage: "/acc"
+    createdir:
+        description: "Create a new Digitised Item Repository."
+        usage: "/createdisc <<Max Item Types> <Max Items Total>> | <uuid>"
+        permission: acc.commands.createdisc
+    search:
+        description: "Set your search query."
+        usage: "/search <Query>"
+        permission: acc.commands.search
+
+main: uk.co.amethystdevelopment.acc.AmethystCacheCompactor
+database: true
+depend: []
+softdepend: [SensibleToolbox]
+api-version: 1.13
