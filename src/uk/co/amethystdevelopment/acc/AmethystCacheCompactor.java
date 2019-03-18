@@ -115,7 +115,7 @@ public class AmethystCacheCompactor extends JavaPlugin
                     Logger.getLogger(AmethystCacheCompactor.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-        }.runTaskTimerAsynchronously(this, 0, 10000);
+        }.runTaskTimerAsynchronously(this, 0, 200);
     }
     
     @Override
